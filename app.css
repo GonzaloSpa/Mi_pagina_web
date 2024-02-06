@@ -1,0 +1,94 @@
+body {
+    font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #020c1b;
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+/* .print {
+    color: #b90148; 
+    text-shadow: 0 0 10px #b90148
+}
+
+.name {
+    color: #3cd13c; /* Color verde para el nombre 
+} 
+*/
+typing-efect {
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 23ch;
+    animation: typing 2s steps(23, end),
+    blink .5s infinite step-end alternate;
+    overflow: hidden
+}
+
+@keyframes typing {
+     from {
+        width: 0;
+    }
+}
+@keyframes blink {
+    50% {border-color: transparent}
+}
+
+    
+
+
+header {
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px;
+}
+
+h2, h3 {
+    color: #3cd13c;
+}
+
+article {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Agrega estilos adicionales según sea necesario */
