@@ -3,29 +3,18 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #020c1b;
+    background-color: #0a192f;
     color: white;
+    max-width: 100%;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-/* .print {
-    color: #b90148; 
-    text-shadow: 0 0 10px #b90148
-}
 
-.name {
-    color: #3cd13c; /* Color verde para el nombre 
-} 
-*/
-typing-efect {
+.typing-effect {
     display: block;
     white-space: nowrap;
     border-right: 4px solid;
-    width: 23ch;
-    animation: typing 2s steps(23, end),
+    width: 24ch;
+    animation: typing 6s steps(24, end),
     blink .5s infinite step-end alternate;
     overflow: hidden
 }
@@ -39,22 +28,44 @@ typing-efect {
     50% {border-color: transparent}
 }
 
-    
 
 
-header {
-    color: white;
-    padding: 1rem;
+.first-container {
+    width: 800px; /* Ajusta según sea necesario */
+    margin-left: 16%; /* Centrar el contenedor en la página */
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;  
+    align-items: center;    
+    justify-content: center;    
+    height: 100vh; 
+     
+         /* 100% del alto de la ventana */
 }
 
+
+/*  nav derecho */
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
+}
+
+.enlaces-nav-one::before {
+    content: "1.";
+    color:#64ffda
+}
+.enlaces-nav-two::before {
+    content: "2.";
+    color:#64ffda
+}
+.enlaces-nav-three::before {
+    content: "3.";
+    color:#64ffda
+}
+.enlaces-nav-four::before {
+    content: "4.";
+    color:#64ffda
 }
 
 nav li {
@@ -64,15 +75,70 @@ nav li {
 nav a {
     text-decoration: none;
     color: #ffffff;
-    font-weight: bold;
 }
+
+.botton-resumen {
+    padding: 12px 16px;
+    color:#64ffda;
+    border: 1px solid #64ffda ;
+    border-radius: 4px;
+}
+
+/* parte de inicio */
+
+.h2-welcome{
+    font-size: medium;
+}
+.h3-name {
+    font-size: 80px;
+    font-family: 'PT Sans', sans-serif;
+    color: #ccd6f6;
+    margin: 0;
+}
+
+.p-fullstack {
+    font-size: 80px;
+    font-family: 'PT Sans', sans-serif;
+    color: #8892b0;
+    margin: 0;
+}
+
+.p-softdev {
+    color : #8892b0;
+}
+
+.second-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+
+header {
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.p-aboutme {
+    color:#8892b0;
+}
+
+
+
+
+
 
 section {
     padding: 40px;
 }
 
 h2, h3 {
-    color: #3cd13c;
+    color: #64ffda;
 }
 
 article {
@@ -82,11 +148,9 @@ article {
 }
 
 footer {
-    background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
-    position: fixed;
+    
     bottom: 0;
     width: 100%;
 }

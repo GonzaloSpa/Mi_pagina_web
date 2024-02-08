@@ -6,36 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=SF+Mono|Fira+Code|Fira+Mono|Roboto+Mono&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="app.css">
     <title>Gonzalo Spaltro</title>
 </head>
 
 <body>
     <header>
-        <span class="typing-efect">
+        <span class="typing-effect" >
             print("Gonzalo Spaltro")
             <!-- <span class="print">print</span>(<span class="name">"Gonzalo Spaltro"</span>) -->
         </span>
         <nav>
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre Mí</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a class="enlaces-nav-one scroll-link" href="#inicio">Inicio</a></li>
+                <li><a class="enlaces-nav-two scroll-link" href="#sobre-mi">Sobre Mí</a></li>
+                <li><a class="enlaces-nav-three scroll-link" href="#proyectos">Proyectos</a></li>
+                <li><a class="enlaces-nav-four scroll-link" href="#contacto">Contacto</a></li>
+                <li><a class="botton-resumen" href="/curriculum">Resumen</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="container">
+    <div class="first-container">
         <section id="inicio">
-            <h2>¡Hola! Bienvenido a mi Sitio/Web</h2>
-            <h3>Soy Gonzalo Spaltro</h3>
-            <p>Fullstack developer</p>
+            <h2 class="h2-welcome">¡Hola! mi nombre es</h2>
+            <h3 class="h3-name">Gonzalo Spaltro.</h3>
+            <p class="p-fullstack">Full Stack Developer.</p>
+            <p class="p-softdev">Soy estudiante en desarrollo de software que se especializa en crear
+                soluciones con código. Actualmente, me centro en crear productos web.
+            </p>
         </section>
-
+        </div>
         <section id="sobre-mi">
             <h2>Sobre Mí</h2>
-            <p>
+            <p class="p-aboutme">
                 ¡Hola! Soy Gonzalo, un apasionado desarrollador Full Stack con proyectos que hablan más fuerte que mi
                 falta de experiencia. Me encanta jugar con tecnologías como React, Javascript, python entre otras,
                 creando desde sitios web a aplicaciones completas.\n
@@ -43,26 +48,26 @@
                 nuevos proyectos y aportar mi energía y habilidades al equipo.
                 ¡Hagamos cosas increíbles juntos! 😊</p>
         </section>
+         <div class="second-container">
+            <section id="proyectos">
+                <h2>Mis Proyectos</h2>
+                <article>
+                    <h3>Nombre del Proyecto 1</h3>
+                    <p>Descripción del proyecto.</p>
+                    <p>Tecnologías utilizadas: HTML, CSS, JavaScript, etc.</p>
+                </article>
+                <!-- Repite este bloque para cada proyecto -->
+            </section>
 
-        <section id="proyectos">
-            <h2>Mis Proyectos</h2>
-            <article>
-                <h3>Nombre del Proyecto 1</h3>
-                <p>Descripción del proyecto.</p>
-                <p>Tecnologías utilizadas: HTML, CSS, JavaScript, etc.</p>
-            </article>
-            <!-- Repite este bloque para cada proyecto -->
-        </section>
-
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Información de contacto, formulario, redes sociales, etc.</p>
-        </section>
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <p>Información de contacto, formulario, redes sociales, etc.</p>
+            </section>
     </div>
     <footer>
         <p>Derechos de autor © 2024 Tu Nombre</p>
     </footer>
-
+    <script src="app.js"></script>
 </body>
 
 
