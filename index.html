@@ -13,42 +13,94 @@
 
 <body>
     <header>
-        <span class="typing-effect" >
-            print("Gonzalo Spaltro")
-            <!-- <span class="print">print</span>(<span class="name">"Gonzalo Spaltro"</span>) -->
-        </span>
+
         <nav>
-            <ul>
-                <li><a class="enlaces-nav-one scroll-link" href="#inicio">Inicio</a></li>
-                <li><a class="enlaces-nav-two scroll-link" href="#sobre-mi">Sobre Mí</a></li>
-                <li><a class="enlaces-nav-three scroll-link" href="#proyectos">Proyectos</a></li>
-                <li><a class="enlaces-nav-four scroll-link" href="#contacto">Contacto</a></li>
-                <li><a class="botton-resumen" href="/curriculum">Resumen</a></li>
-            </ul>
+            <span class="typing-effect">
+                print("Gonzalo Spaltro")
+                <!-- <span class="print">print</span>(<span class="name">"Gonzalo Spaltro"</span>) -->
+            </span>
+            <div class="nav-right">
+                <ul>
+                    <li><a class="enlaces-nav-one scroll-link" href="#inicio">Inicio</a></li>
+                    <li><a class="enlaces-nav-two scroll-link" href="#sobre-mi">Sobre Mí</a></li>
+                    <li><a class="enlaces-nav-three scroll-link" href="#proyectos">Proyectos</a></li>
+                    <li><a class="enlaces-nav-four scroll-link" href="#contacto">Contacto</a></li>
+                </ul>
+                <div><a class="botton-resumen" href="/curriculum">Resumen</a></div>
+            </div>
+
         </nav>
     </header>
-
-    <div class="first-container">
-        <section id="inicio">
-            <h2 class="h2-welcome">¡Hola! mi nombre es</h2>
-            <h3 class="h3-name">Gonzalo Spaltro.</h3>
-            <p class="p-fullstack">Full Stack Developer.</p>
-            <p class="p-softdev">Soy estudiante en desarrollo de software que se especializa en crear
-                soluciones con código. Actualmente, me centro en crear productos web.
-            </p>
-        </section>
+    <div class="social-links" orientation="left">
+        <ul class="lista-desordenada-social">
+            <li>
+                <a href="https://github.com/GonzaloSpa" aria-label="GitHub" target="_blank" rel="noreferrer"><svg
+                        xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icono-github">
+                        <title>GitHub</title>
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                    </svg></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/gonspaltro" aria-label="Instagram" target="_blank"
+                    rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icono-instagram">
+                        <title>Instagram</title>
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/gonzalo-spaltro-dev/" aria-label="Linkedin" target="_blank"
+                    rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icono-linkedin">
+                        <title>LinkedIn</title>
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg></a>
+            </li>
+            <!-- ::after -->
+        </ul>
+    </div>
+    <div class="email-link" orientation="right">
+        <div class="email">
+            <a href="gonzalospaltro98@gmail.com">gonzalospaltro98@gmail.com</a>
+            <!-- ::after -->
         </div>
-        <section id="sobre-mi">
-            <h2>Sobre Mí</h2>
-            <p class="p-aboutme">
-                ¡Hola! Soy Gonzalo, un apasionado desarrollador Full Stack con proyectos que hablan más fuerte que mi
-                falta de experiencia. Me encanta jugar con tecnologías como React, Javascript, python entre otras,
-                creando desde sitios web a aplicaciones completas.\n
-                Mi enfoque es aprender rápido y enfrentar desafíos con una sonrisa. Estoy listo para sumergirme en
-                nuevos proyectos y aportar mi energía y habilidades al equipo.
-                ¡Hagamos cosas increíbles juntos! 😊</p>
+    </div>
+    <main class="main-page">
+        <div class="first-container">
+            <section class="inicio">
+                <h2 class="h2-welcome">¡Hola! mi nombre es</h2>
+                <h3 class="h3-name">Gonzalo Spaltro.</h3>
+                <p class="p-fullstack">Full Stack Developer.</p>
+                <p class="p-softdev">Soy estudiante en desarrollo de software que se especializa en crear
+                    soluciones con código. Actualmente, me centro en crear productos web.
+                </p>
+            </section>
+        </div>
+        <section class="about-me">
+            <h2 class="aboutme-title">Sobre Mí</h2>
+            <div class="inner">
+                <p class="p-aboutme">
+                    ¡Hola! Soy Gonzalo, un apasionado desarrollador Full Stack con proyectos que hablan más fuerte que
+                    mi
+                    falta de experiencia. Me encanta jugar con tecnologías como React, Javascript, python entre otras,
+                    creando desde sitios web a aplicaciones completas.\n
+                    Mi enfoque es aprender rápido y enfrentar desafíos con una sonrisa. Estoy listo para sumergirme en
+                    nuevos proyectos y aportar mi energía y habilidades al equipo.
+                    ¡Hagamos cosas increíbles juntos! 😊</p>
+                <img src="./assets/gonzalo.jpg" alt="Gonzalo picture" width="280" height="300" style="object-fit: cover; opacity: 1;">
+            </div>
         </section>
-         <div class="second-container">
+        <div class="second-container">
             <section id="proyectos">
                 <h2>Mis Proyectos</h2>
                 <article>
@@ -63,7 +115,8 @@
                 <h2>Contacto</h2>
                 <p>Información de contacto, formulario, redes sociales, etc.</p>
             </section>
-    </div>
+        </div>
+    </main>
     <footer>
         <p>Derechos de autor © 2024 Tu Nombre</p>
     </footer>
