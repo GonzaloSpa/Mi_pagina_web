@@ -12,11 +12,15 @@ body {
 header {
     display: flex;
     height: 70px;
-    position: relative;
     padding: 0px 50px;
     align-items: center;
     justify-content: space-between;
-    
+    position: relative;
+    position:sticky;
+    top: 0;
+    background-color: rgba(10, 25, 47, 0.85);
+    backdrop-filter: blur(10px);
+    z-index: 12;
 }
 
 nav {
@@ -24,11 +28,13 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position:relative;
-    z-index: 12;
+    position: relative;
+    
     width: 100%;
     height: auto;
 }
+
+
 .nav-right {
     display: flex;
     justify-content: space-between;
@@ -249,7 +255,13 @@ nav a {
 }
 
 .aboutme-title{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
     color: #ccd6f6;
+    white-space: nowrap;
 }
 .aboutme-title::before {
     content: "01.";
@@ -257,6 +269,16 @@ nav a {
     margin-right:6px
 }
 
+.aboutme-title::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: 0px;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color:#233554;
+}
 .inner {
      display: grid;
     grid-template-columns: 3fr 2fr;
@@ -269,9 +291,35 @@ nav a {
 }
 
 
+.imagen-gonzalo {
+    border: 2px solid #64ffda;
+    border-radius: 4px;
+}
 
+.skill-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    gap: 0px 10px;
+    padding: 0px;
+    margin: 20px 0px 0px;
+    overflow: hidden;
+    list-style: none;
+}
 
-
+.skill {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-size: 13px;
+}
+.skill::before {
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    color: #64ffda;
+    font-size: 14px;
+    line-height: 12px;
+}
 
 section {
     margin: 0px auto;

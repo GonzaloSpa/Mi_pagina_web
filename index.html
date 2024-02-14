@@ -12,9 +12,9 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
 
-        <nav>
+        <nav class="nav">
             <span class="typing-effect">
                 print("Gonzalo Spaltro")
                 <!-- <span class="print">print</span>(<span class="name">"Gonzalo Spaltro"</span>) -->
@@ -77,7 +77,7 @@
     </div>
     <main class="main-page">
         <div class="first-container">
-            <section class="inicio">
+            <section class="inicio" id="inicio">
                 <h2 class="h2-welcome">¡Hola! mi nombre es</h2>
                 <h3 class="h3-name">Gonzalo Spaltro.</h3>
                 <p class="p-fullstack">Full Stack Developer.</p>
@@ -86,18 +86,34 @@
                 </p>
             </section>
         </div>
-        <section class="about-me">
+        <section class="about-me" id="sobre-mi">
             <h2 class="aboutme-title">Sobre Mí</h2>
             <div class="inner">
-                <p class="p-aboutme">
-                    ¡Hola! Soy Gonzalo, un apasionado desarrollador Full Stack con proyectos que hablan más fuerte que
-                    mi
-                    falta de experiencia. Me encanta jugar con tecnologías como React, Javascript, python entre otras,
-                    creando desde sitios web a aplicaciones completas.\n
-                    Mi enfoque es aprender rápido y enfrentar desafíos con una sonrisa. Estoy listo para sumergirme en
-                    nuevos proyectos y aportar mi energía y habilidades al equipo.
-                    ¡Hagamos cosas increíbles juntos! 😊</p>
-                <img src="./assets/gonzalo.jpg" alt="Gonzalo picture" width="280" height="300" style="object-fit: cover; opacity: 1;">
+                <div class="about">
+                    <p class="p-aboutme">
+                        ¡Hola! Soy Gonzalo, un apasionado desarrollador Full Stack con proyectos que hablan más fuerte
+                        que
+                        mi
+                        falta de experiencia. Me encanta jugar con tecnologías como React, Javascript, python entre
+                        otras,
+                        creando desde sitios web a aplicaciones completas. <br>
+                        Mi enfoque es aprender rápido y enfrentar desafíos con una sonrisa. Estoy listo para sumergirme
+                        en
+                        nuevos proyectos y aportar mi energía y habilidades al equipo.
+                        ¡Hagamos cosas increíbles juntos! 😊
+                        <br>
+                    Aquí algunas de las tecnologias que uso en mis proyectos actualmente</p>
+                    <ul class="skill-list">
+                        <li class="skill">JavaScript(ES6 +)</li>
+                        <li class="skill">React.js</li>
+                        <li class="skill">Node.js</li>
+                        <li class="skill">FastAPI</li>
+                        <li class="skill">MongoDB</li>
+                        
+                    </ul>
+                </div>
+                <img class="imagen-gonzalo" src="./assets/gonzalo.jpg" alt="Gonzalo picture" width="280" height="300"
+                    style="object-fit: cover; opacity: 1;">
             </div>
         </section>
         <div class="second-container">
